@@ -4,3 +4,11 @@
   border-radius: 50%;
   object-fit: cover;
 }
+
+.btn {
+  margin: 5px;
+}
+
+.disappear {
+  display: none;
+}

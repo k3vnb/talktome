@@ -1,4 +1,14 @@
 $(document).ready(function() {
+  $("button#stop").after('<button class="btn btn-inverse" id="show-image">Call the Authorities</button>');
+  $("button#show-image").click(function() {
+    $("img.disappear").fadeToggle(200);
+  });
+
+  /*$("button#show-image").click(function() {
+    $("div.row").before("<img src=\"img/dog2.jpg\" class=\"img-thumbnail\">").toggle();
+    $("div.row").before("<img src=\"img/cat2.jpeg\" class=\"img-thumbnail\">").toggle();
+  });*/
+
   $("button#meow").click(function() {
     $("ul#dog").prepend("<li>Woof!</li>");
     $("ul#cat").prepend("<li>Meow!</li>");
