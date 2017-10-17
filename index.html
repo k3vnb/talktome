@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/master.css">
-    <script src="https://code.jquery.com/jquery-1.12.4.js"
-integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-crossorigin="anonymous"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.js"
+  integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI="
+  crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
-    <title>Talk to Me!</title>
+    <title>Talk to the web page</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Purrr</h1>
+      <p>You are a <strong>cat</strong>. The Dog Mod doesn't like you!</p>
 
+      <button class="btn btn-primary" id="meow">Say "Meow"</button>
+      <button class="btn btn-inverse" id="purrr">Say "Purrr"</button>
+      <button class="btn btn-danger" id="stop">Screetch!</button>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h2>You said:</h2>
+          <ul class="unstyled" id="cat">
+
+          </ul>
+        </div>
+
+        <div class="col-md-6">
+          <h2>The web page said back:</h2>
+          <ul class="unstyled" id="dog">
+
+          </ul>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
